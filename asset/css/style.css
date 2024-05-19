@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    background: #000000;
+    justify-content: space-between;
+    padding: 1.5em 4em;
+}
+nav h1{
+    color: #ffff;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+nav ul li {
+    list-style: none;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffff;
+}
+.home h1{
+    text-align: center;
+    color: #ffff;
+    position: relative;
+    bottom: -1em;
+    font-size: 3em;
+}
+.home img{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: -18em;
+    z-index: -1;
+}
+.shoes{
+    background: #f6f6f6;
+    height: 100vh;
+    position: relative;
+    top: -28em;
+}
+.shoes h1,
+.shoes p{
+    text-align: center;
+}
+.shoes p{
+    font-size: 1.2em;
+}
+.shoes h1{
+    padding-top: 2em;
+    font-size: 2em;
+}
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 1em auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card-list .card-item {
+    background: #ffffff;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+}
+
+.card-list .card-item:hover {
+    border: 2px solid #000;
+}
+
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card-list span {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-list span{
+    color: #000000;
+}   
+
+.card-item h3 {
+    color: #000;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: .9em;
+}
+
+.card-list h2{
+    margin-top: 10px;
+    color: #000;
+}
+
+.priceOrderBtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.priceOrderBtn .orderBtn{
+    color: #de75e8;
+    padding: 10px 20px;
+    border: 2px dashed #000;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;
+    }
+}
